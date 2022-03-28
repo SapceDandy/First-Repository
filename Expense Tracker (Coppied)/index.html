@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Rubik&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <div class = "app">
+            <h1>Devon's Expense Tracker</h1>
+
+            <div class = "balance-container">
+                <h2>Devon's BALANCE</h2>
+                <div id = "balance">$0</div>
+            </div>
+
+                <div class = "cashflow-container">
+                    <div class = "income-container">
+                        <h2>INCOME</h2>
+                        <div id = "income">$0</div>
+                    </div>
+                    <div class = "expense-container">
+                        <h2>EXPENSE</h2>
+                        <div id = "expense">$0</div>
+                    </div>
+                </div>
+
+            <div class = "transaction-container">
+                <h2 id = "th">Naps</h2>
+                <ul id = "transaction">
+                </ul>
+            </div>
+
+            <div class = "form-container">
+                <h2 >ADD NEW TRANSACTION</h2>
+                <form onsubmit="return false;" autocomplete="off">
+                    <label for="name">Name</label>
+                    <input type = "text" id = "name"> 
+                    <label for="amount">Amount</label>                    
+                    <input type ="number" id = "amount">
+                    <button id = "incomeBtn">ADD INCOME</button>
+                    <button id = "expenseBtn">ADD EXPENSE</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+     <script src="./app.js"></script>
+</body>
+</html>
